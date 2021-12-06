@@ -1,5 +1,6 @@
 import { ThemeProvider } from "styled-components";
 import Toggle from "./Toggle";
+import LoginForm from "./LoginForm";
 import useTheme from "./useTheme";
 import { GlobalStyles } from "./globalStyles";
 import { lightTheme, darkTheme } from "./theme";
@@ -18,6 +19,7 @@ function App() {
 			<>
 				<GlobalStyles />
 				<Toggle theme={theme} toggleTheme={toggleTheme} />
+				<LoginForm />
 			</>
 		</ThemeProvider>
 	);
